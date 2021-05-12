@@ -4,6 +4,10 @@ canvas {
     display: block;
   }
 
+  .panel{
+    display: none;
+  }
+
   .game-intro {
     float: left;
     padding: 0% 10%;
