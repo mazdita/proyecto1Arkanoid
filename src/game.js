@@ -1,5 +1,7 @@
 class Game {
   constructor(ctx) {
+    //this.ctx = document.getElementById(ctx).getContext('2d');
+
     this.ctx = ctx;
     this.intervalId = null;
 
@@ -10,6 +12,8 @@ class Game {
     this.initBricks();
 
     this.score = new Score(ctx);
+
+    //this.onGameOver = onGameOver
 
   }
   initBricks() {
@@ -79,6 +83,7 @@ class Game {
       this.ctx.canvas.width / 2,
       this.ctx.canvas.height / 2
     )
+    //this.onGameOver();
   }
 
   checkCollisions() {
@@ -106,4 +111,4 @@ class Game {
   }
 }
 
-//const newBricks =this.bricks.filter(brick => !this.ball.collide(brick))
+
